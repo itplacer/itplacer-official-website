@@ -1,0 +1,141 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #013437;
+    
+  }
+
+  .header{
+    display: flex;
+    display: flex;
+    margin-top:0.9rem;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+  }
+  .header img{
+    height: 2rem;
+  }
+  .navlink_btn{
+      display: flex;
+  }
+  .menu ul
+  {
+    list-style:none;
+    position:relative;
+    float:left;
+    margin:0;
+    padding:0;
+    
+  }
+
+  .menu ul a
+  {
+    display:block;
+    color:#fff;
+    text-decoration:none;
+    font-weight:550;
+    font-size:1rem;
+    line-height:32px;
+    padding:0 15px;
+    font-family:Helvetica,Arial,sans-serif;
+  }
+  
+  .menu ul li
+  {
+    position:relative;
+    float:left;
+    margin:0;
+    padding:0
+  }
+  .menu ul ul
+  {
+    display:none;
+    position:absolute;
+    top:100%;
+    background:#F3FAF7;
+  }
+
+  .menu ul ul li
+  {
+    float:none;
+    width: 32rem;
+    border-radius: 10px;
+  }
+  .menu ul ul{
+      border-radius: 10px;
+      /* box-shadow: 0 0 5px white; */
+  }
+
+  .menu ul ul a
+  {
+    line-height:120%;
+    padding:10px 15px
+  }
+  .menu ul ul ul
+  {
+    top:-4px;
+    left:100%
+  }
+
+  .menu ul li:hover > ul
+  {
+    display:block
+  }
+
+  /* ---------------------------------------- */
+  .subLink{
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem;
+    font-weight: 400;
+    color: gray;
+    font-size: 0.9rem;
+  }
+  .icon{
+    padding: 0.3rem;
+    background-color: aqua;
+    color: black;
+    font-weight: 100;
+    font-size: 20px;
+    margin: 0.2rem 0.8rem;
+  }
+  .service{
+    color: rgb(71, 71, 71);
+    font-weight: 800;
+  }
+  #menu-bar{
+    display: none;
+  }
+  .menuIcon{
+    font-size: 30px ;
+    cursor: pointer;
+    color: white;
+    display: none;
+  }
+  /* ------------------------------Responsive-------------------------------------- */
+  @media(max-width:1150px){
+  
+     .menuIcon{
+      display: initial;
+    }
+    .menu {
+      position: absolute;
+      top: 100%; left: 0; right: 0;
+    }
+    .menu ul li{
+      width: 100vw;
+    }
+    .menu ul li ul {
+      position: relative;
+    }
+    #menu-bar:checked  ~ .menu{
+      display: initial;
+    }
+    .menu ul ul li{
+      width: 95vw;
+      padding: 0;
+      border-radius: 7px;
+    }
+  }

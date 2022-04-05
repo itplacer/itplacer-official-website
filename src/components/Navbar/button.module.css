@@ -1,0 +1,30 @@
+
+button{
+    font-size: 1.1rem;
+    padding: 0.3rem 1.4rem;
+    border: 2px solid white;
+    border-radius: 10px ;
+    margin: 0 0.5rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    /* transition: 0.1s; */
+}
+.sign_btn{
+    font-size: 1.1rem;
+    padding: 5px 19px;
+    background-color: #013437;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px ;
+}
+.sign_btn:hover{
+    background-color: #09634E;
+    border: none;
+    padding: 7px 21px;
+}
+.book_btn{
+    background-color: #FED400;
+    color: black;
+    border: none;
+    padding: 7px 21px;
+}
