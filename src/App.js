@@ -1,10 +1,11 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
+import ContactForm from "./components/ContactForm";
 
 function App() {
   return (
     <div>
-      <h1>hi</h1>
+      <ContactForm />
     </div>
   );
 }
