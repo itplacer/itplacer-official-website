@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Index from './Components/ReviewCard';
+import ReviewCard from "./components/ReviewCard/reviewCard"
 
 function App() {
   return (
     <div>
-      <Index />
+      <ReviewCard />
     </div>
   );
 }
